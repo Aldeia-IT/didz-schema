@@ -1,0 +1,57 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/ed25519-2018/v1"
+  ],
+  "id": "did:example:123456789abcdefghi",
+  "verificationMethod": [
+    {
+      "id": "did:example:123456789abcdefghi#keys-1",
+      "type": "Ed25519VerificationKey2018",
+      "controller": "did:example:123456789abcdefghi",
+      "publicKeyBase58": "6dFg6YhK6JPrz8mzN7b2E6oJv7hH68X9ZJjKQD5oLwug"
+    }
+  ],
+  "authentication": [
+    "did:example:123456789abcdefghi#keys-1"
+  ],
+  "metadata": {
+    "projectId": "EXAMPLEID12233",
+    "projectType": "Agriculture",
+    "projectName": "Example Name",
+    "projectDescription": "Example Description",
+    "projectMethodology": "ACM0002",
+    "projectStartDate": "2023-03-24",
+    "projectEndDate": "2023-10-24",
+    "projectMedia": [{"type": "previewPhoto", "url": "http://image.jpg"}],
+    "projectDeveloper": "",
+    "projectDocuments": [
+      {
+        "code":"VCS_PIPELINE_DOCUMENTS",
+        "description":"VCS Pipeline Documents",
+        "documents":[
+          {
+            "uri":"https://registry.verra.org/mymodule/ProjectDoc/Project_ViewFile.asp?FileID=87080&IDKEY=aiquwesdfmnk0iei23nnm435oiojnc909dsflk9809adlkmlkfd120083320",
+            "documentType":"Draft Project Description",
+            "documentName":"VCS_PROJ_DESC_PCP_4247_13MAR2023.pdf",
+            "uploadDate":"2023-03-24T14:44:26.69Z"
+          }
+        ]
+      }
+    ],
+    "projectLocation": {
+      "@context": { 
+        "type": "@type",
+        "@vocab": "https://purl.org/geojson/vocab#",
+        "coordinates": {
+          "@container": "@list"
+        },
+        "bbox": {
+          "@container": "@list"
+        }
+      },
+      "type": "Feature"
+    },
+    "projectURI": "https://examp.le"
+  }
+}
