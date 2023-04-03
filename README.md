@@ -17,7 +17,8 @@ Following the introduction, we'll present an Entity Relationship Diagram (ERD) t
 
 
 
-![](assets/20230403_125123_Entity_Relationship Diagram (ERD).jpg)
+![EDR](https://github.com/Aldeia-IT/didz-schema/blob/main/assets/20230403_125123_Entity_Relationship%20Diagram%20(ERD).jpg?raw=true)
+
 
 ---
 
