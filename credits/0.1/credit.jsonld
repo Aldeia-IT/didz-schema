@@ -1,0 +1,28 @@
+{
+	"@context": [
+	  "https://www.w3.org/ns/did/v1",
+	  "https://w3id.org/security/suites/ed25519-2018/v1"
+	],
+	"id": "did:{enviroment}:credit:{publickey}",
+	"verificationMethod": [
+	  {
+		"id": "did:{enviroment}:credit:{publickey}#keys-1",
+		"type": "Ed25519VerificationKey2018",
+		"controller": "did:{enviroment}:credit:{publickey}",
+		"publicKeyBase58": "6dFg6YhK6JPrz8mzN7b2E6oJv7hH68X9ZJjKQD5oLwug"
+	  }
+	],
+	"authentication": [
+	  "did:{enviroment}:credit:{publickey}#keys-1"
+	],
+	"metadata": {
+	  "creditType": "type123",
+	  "creditName": "Credit name",
+	  "creditDescription": "Credit description",
+	  "creditUrl": "https://www.cityforestcredits.org/wp-content/uploads/2020/10/Bainbridge-Forest-Verification-Report.pdf",
+	  "sourceRegistry": {
+		"name": "Verra",
+		"url": "https://verra.org"
+	  }
+	}
+  }
