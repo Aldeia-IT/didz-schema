@@ -1,0 +1,23 @@
+{
+  "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/suites/ed25519-2020/v1"
+    ],
+    "id": "did:example:123",
+    "controller": "did:example:0x3CAD1995162d184c19fC3Ed7b856895487948166",
+    "verificationMethod": [
+        {
+            "id": "did:example:123#keys-1",
+            "type": "Ed25519VerificationKey2020",
+            "controller": "did:example:0x3CAD1995162d184c19fC3Ed7b856895487948166",
+            "publicKeyMultibase": "zFpibxkeMdS4tQDk3UaeiRS3hZTenvbeaWQu12tRr4Pep"
+        }
+    ],
+    "authentication": [
+        "did:example:123#keys-1"
+    ],
+    "creditBatch": {
+      "project": "did:project:0x3CAD1995162d184c19fC3Ed7b856895487948166",
+      "methodology": "ACM0002"
+    }
+}

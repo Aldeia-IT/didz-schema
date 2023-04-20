@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "required": [
+    "@context",
+    "id",
+    "controller",
+    "verificationMethod",
+    "authentication",
+    "project"
+  ],
+  "properties": {
+    "@context": { "type": "array" },
+    "id": { "type": "string" },
+    "controller": { "type": "string" },
+    "verificationMethod": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "controller", "publicKeyMultibase"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string" },
+          "controller": { "type": "string" },
+          "publicKeyMultibase": { "type": "string" }
+        }
+      }
+    },
+    "authentication": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "project": {
+      "type": "object",
+      "required": ["title", "summary", "location", "methodologies"],
+      "properties": {
+        "title": { "type": "string" },
+        "summary": { "type": "string" },
+        "location": { "type": "string" },
+        "methodologies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
